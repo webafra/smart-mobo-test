@@ -1,0 +1,31 @@
+
+@font-face {
+  font-family: 'vazir';
+  src: url('./fonts/Vazir.woff') format('woff');
+}
+@font-face {
+  font-family: 'vazir_Black';
+  src: url('./fonts/Vazir-Black.woff') format('woff');
+}
+@font-face {
+  font-family: 'vazir_Bold';
+  src: url('./fonts/Vazir-Bold.woff') format('woff');
+}
+@font-face {
+  font-family: 'vazir_Medium';
+  src: url('./fonts/Vazir-Medium.woff') format('woff');
+}
+@font-face {
+  font-family: 'vazir_Light';
+  src: url('./fonts/Vazir-Light.woff') format('woff');
+}
+
+* {
+  font-family: 'vazir';
+  font-size: 14px;
+  line-height: normal;
+}
+.site-footer {
+  background-color: #1F2631;
+  color: #FFFFFF;
+}

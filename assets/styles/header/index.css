@@ -1,0 +1,129 @@
+.list{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 120px;
+    gap: 30px;
+    border-bottom: 1px solid #313d50;
+  }
+  .list_item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #273140;
+    padding: 12.5px 0;
+    border-radius: 10px;
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .access{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 120px;
+    padding: 30px 120px 50px;
+  }
+  
+  .access_item_titr{
+    padding-bottom: 25px
+  }
+  .access_item_list.menu{
+    display: flex;
+    gap: 110px;
+  }
+  .menu .access_item_list_row{
+    display: flex;
+    flex-direction: column;
+    gap: 20px
+  }
+  .access_item_list_row a{
+    color: #b0b3b7;
+    text-decoration: none;
+  }
+  
+  .access_item_list.address{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .address .access_item_list_item{
+    color: #b0b3b7;
+  }
+  
+  .access_item_list.social{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    justify-content: space-between;
+  }
+  .access_item_list.link{
+    display: flex;
+    align-items: center;
+    padding-top: 20px;
+    gap: 15px
+  }
+  .access_item_list_button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 10px;
+    border-radius: 10px;
+    gap: 10px;
+    cursor: pointer;
+  }
+  .access_item_list_button.instagram{
+    background: #f09433; 
+    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+    background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+  }
+  .access_item_list_button.telegram{
+    background: #0088CC; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #0088CC, #7ac8f0); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #0088CC, #7ac8f0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  }
+  .copyright{
+    padding: 15px 120px;
+    background: #191f29;
+  }
+  .copyright .copyright_text{
+    color: #b0b3b7
+  }
+  .copyright .copyright_text span{
+    color: #fff
+  }
+
+
+
+  @media(max-width:1024px){
+    .list,
+    .access,
+    .copyright{
+        padding-right: 100px;
+        padding-left: 100px;
+    }
+  }
+
+  @media(max-width:768px){
+    .list{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .access{
+        grid-template-columns: 1fr;
+        gap: 40px
+    }
+  }
+
+  @media(max-width:425px){
+    .list,
+    .access,
+    .copyright{
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+    .list{
+        grid-template-columns: 1fr 1fr;
+    }
+  }
